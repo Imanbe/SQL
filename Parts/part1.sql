@@ -70,7 +70,7 @@ begin
         INSERT INTO Tasks VALUES('DO6', 'DO5', '300');
         INSERT INTO Tasks VALUES('D0E-T', 'DO6', '200');
 
-        INSERT INTO Tasks VALUES('CPP1', 'C8', '2200');
+        INSERT INTO Tasks VALUES('CPP1', 'C8', '300');
         INSERT INTO Tasks VALUES('CPP2', 'CPP1', '350');
         INSERT INTO Tasks VALUES('CPP3', 'CPP2', '600');
         INSERT INTO Tasks VALUES('CPP4', 'CPP3', '750');
@@ -111,47 +111,60 @@ begin
 
     if (fill = true) then
         INSERT INTO Checks(Peer, Task, Date) VALUES('Marcelit', 'C1', '2023-08-01');
+        INSERT INTO Checks(Peer, Task, Date) VALUES('Marcelit', 'C1', '2023-08-03');
         INSERT INTO Checks(Peer, Task, Date) VALUES('Zoomdeni', 'C1', '2023-08-04');
         INSERT INTO Checks(Peer, Task, Date) VALUES('Tonitaga', 'C1', '2023-08-06');
-        INSERT INTO Checks(Peer, Task, Date) VALUES('Jerlenem', 'C1', '2023-08-08');
+        INSERT INTO Checks(Peer, Task, Date) VALUES('Jerlenem', 'C1', '2023-08-08'); -- 5
         INSERT INTO Checks(Peer, Task, Date) VALUES('Grandpat', 'C1', '2023-08-09');
         INSERT INTO Checks(Peer, Task, Date) VALUES('Marcelit', 'C2', '2023-08-10');
+        INSERT INTO Checks(Peer, Task, Date) VALUES('Zoomdeni', 'C2', '2023-08-11'); -- 8
         INSERT INTO Checks(Peer, Task, Date) VALUES('Zoomdeni', 'C2', '2023-08-11');
-        INSERT INTO Checks(Peer, Task, Date) VALUES('Jerlenem', 'C2', '2023-08-12');
+        INSERT INTO Checks(Peer, Task, Date) VALUES('Jerlenem', 'C2', '2023-08-12'); -- 10
         INSERT INTO Checks(Peer, Task, Date) VALUES('Tonitaga', 'C2', '2023-08-13'); 
         INSERT INTO Checks(Peer, Task, Date) VALUES('Grandpat', 'C2', '2023-08-14');
-        INSERT INTO Checks(Peer, Task, Date) VALUES('Zoomdeni', 'C3', '2023-08-15');
+        INSERT INTO Checks(Peer, Task, Date) VALUES('Zoomdeni', 'C3', '2023-08-15'); -- 13
+        INSERT INTO Checks(Peer, Task, Date) VALUES('Zoomdeni', 'C3', '2023-08-16'); -- 14
+        INSERT INTO Checks(Peer, Task, Date) VALUES('Grandpat', 'DO1', '2023-08-17');-- 15
         INSERT INTO Checks(Peer, Task, Date) VALUES('Grandpat', 'DO1', '2023-08-17');
+        INSERT INTO Checks(Peer, Task, Date) VALUES('Grandpat', 'DO1', '2023-08-17');-- 17
         INSERT INTO Checks(Peer, Task, Date) VALUES('Tonitaga', 'DO1', '2023-08-18');
-        INSERT INTO Checks(Peer, Task, Date) VALUES('Grandpat', 'DO2', '2023-08-19');
-        INSERT INTO Checks(Peer, Task, Date) VALUES('Marcelit', 'C3', '2023-08-20');
-        INSERT INTO Checks(Peer, Task, Date) VALUES('Tonitaga', 'DO2', '2023-08-22');
-        INSERT INTO Checks(Peer, Task, Date) VALUES('Grandpat', 'DO3', '2023-08-23');
-        INSERT INTO Checks(Peer, Task, Date) VALUES('Zoomdeni', 'C4', '2023-08-25');
-        INSERT INTO Checks(Peer, Task, Date) VALUES('Marcelit', 'C4', '2023-08-26');
-        INSERT INTO Checks(Peer, Task, Date) VALUES('Tonitaga', 'DO3', '2023-08-29');
+        INSERT INTO Checks(Peer, Task, Date) VALUES('Grandpat', 'DO2', '2023-08-19');-- 19
+        INSERT INTO Checks(Peer, Task, Date) VALUES('Marcelit', 'C3', '2023-08-20'); -- 20
+        INSERT INTO Checks(Peer, Task, Date) VALUES('Tonitaga', 'DO2', '2023-08-22');-- 21
+        INSERT INTO Checks(Peer, Task, Date) VALUES('Tonitaga', 'DO2', '2023-08-22');-- 22
+        INSERT INTO Checks(Peer, Task, Date) VALUES('Grandpat', 'DO3', '2023-08-23');-- 23
+        INSERT INTO Checks(Peer, Task, Date) VALUES('Zoomdeni', 'C4', '2023-08-25'); -- 24
+        INSERT INTO Checks(Peer, Task, Date) VALUES('Marcelit', 'C4', '2023-08-26'); -- 25
+        INSERT INTO Checks(Peer, Task, Date) VALUES('Tonitaga', 'DO3', '2023-08-29');-- 26
+        INSERT INTO Checks(Peer, Task, Date) VALUES('Zoomdeni', 'C5', '2023-09-05'); -- 27
         INSERT INTO Checks(Peer, Task, Date) VALUES('Zoomdeni', 'C5', '2023-09-05');
-        INSERT INTO Checks(Peer, Task, Date) VALUES('Marcelit', 'C5', '2023-09-07');
-        INSERT INTO Checks(Peer, Task, Date) VALUES('Zoomdeni', 'C6', '2023-09-16');
-        INSERT INTO Checks(Peer, Task, Date) VALUES('Marcelit', 'C6', '2023-09-18');
+        INSERT INTO Checks(Peer, Task, Date) VALUES('Zoomdeni', 'C5', '2023-09-06');
+        INSERT INTO Checks(Peer, Task, Date) VALUES('Zoomdeni', 'C5', '2023-09-06'); -- 30
+        INSERT INTO Checks(Peer, Task, Date) VALUES('Marcelit', 'C5', '2023-09-07'); -- 31
+        INSERT INTO Checks(Peer, Task, Date) VALUES('Zoomdeni', 'C6', '2023-09-16'); -- 32
+        INSERT INTO Checks(Peer, Task, Date) VALUES('Marcelit', 'C6', '2023-09-18'); -- 33
         INSERT INTO Checks(Peer, Task, Date) VALUES('Zoomdeni', 'C7', '2023-09-23');
-        INSERT INTO Checks(Peer, Task, Date) VALUES('Marcelit', 'C7', '2023-09-29');
+        INSERT INTO Checks(Peer, Task, Date) VALUES('Marcelit', 'C7', '2023-09-29'); -- 35
         INSERT INTO Checks(Peer, Task, Date) VALUES('Zoomdeni', 'C8', '2023-09-30');
         INSERT INTO Checks(Peer, Task, Date) VALUES('Marcelit', 'C8', '2023-10-08');
         INSERT INTO Checks(Peer, Task, Date) VALUES('Zoomdeni', 'CPP1', '2023-10-15');
         INSERT INTO Checks(Peer, Task, Date) VALUES('Marcelit', 'SQL1', '2023-10-16');
-        INSERT INTO Checks(Peer, Task, Date) VALUES('Zoomdeni', 'SQL1', '2023-10-26');
+        INSERT INTO Checks(Peer, Task, Date) VALUES('Zoomdeni', 'SQL1', '2023-10-26'); -- 40
         INSERT INTO Checks(Peer, Task, Date) VALUES('Marcelit', 'CPP1', '2023-10-25');
         INSERT INTO Checks(Peer, Task, Date) VALUES('Zoomdeni', 'SQL2', '2023-11-01');
         INSERT INTO Checks(Peer, Task, Date) VALUES('Marcelit', 'SQL2', '2023-11-06');
         INSERT INTO Checks(Peer, Task, Date) VALUES('Zoomdeni', 'SQL3', '2023-11-10');
-        INSERT INTO Checks(Peer, Task, Date) VALUES('Zoomdeni', 'CPP2', '2023-11-14');
+        INSERT INTO Checks(Peer, Task, Date) VALUES('Zoomdeni', 'CPP2', '2023-11-14'); -- 45
         INSERT INTO Checks(Peer, Task, Date) VALUES('Marcelit', 'CPP2', '2023-11-24');
         INSERT INTO Checks(Peer, Task, Date) VALUES('Zoomdeni', 'CPP3', '2023-11-29');
         INSERT INTO Checks(Peer, Task, Date) VALUES('Marcelit', 'CPP3', '2023-12-03');
         INSERT INTO Checks(Peer, Task, Date) VALUES('Zoomdeni', 'CPP4', '2023-12-12');
-        INSERT INTO Checks(Peer, Task, Date) VALUES('Marcelit', 'CPP4', '2023-12-15');
+        INSERT INTO Checks(Peer, Task, Date) VALUES('Marcelit', 'CPP4', '2023-12-15'); -- 50
         INSERT INTO Checks(Peer, Task, Date) VALUES('Zoomdeni', 'A1', '2023-12-20');
+        INSERT INTO Checks(Peer, Task, Date) VALUES('Zoomdeni', 'A1', '2023-12-24');
+        INSERT INTO Checks(Peer, Task, Date) VALUES('Zoomdeni', 'A1', '2023-12-26');
+        INSERT INTO Checks(Peer, Task, Date) VALUES('Zoomdeni', 'A1', '2023-12-26');
+        INSERT INTO Checks(Peer, Task, Date) VALUES('Zoomdeni', 'A1', '2023-12-31'); -- 55
     end if;
 end;
 $$ language plpgsql;
@@ -169,7 +182,46 @@ begin
     );
 
     if (fill = true) then
-        INSERT INTO XP("Check", XPAmount) VALUES(1, 2200);
+        INSERT INTO XP("Check", XPAmount) VALUES(2, 1023);
+        INSERT INTO XP("Check", XPAmount) VALUES(3, 1400);
+        INSERT INTO XP("Check", XPAmount) VALUES(4, 800);
+        INSERT INTO XP("Check", XPAmount) VALUES(5, 2123);
+        INSERT INTO XP("Check", XPAmount) VALUES(6, 789);
+        INSERT INTO XP("Check", XPAmount) VALUES(7, 214);
+        INSERT INTO XP("Check", XPAmount) VALUES(9, 214);
+        INSERT INTO XP("Check", XPAmount) VALUES(11, 189);
+        INSERT INTO XP("Check", XPAmount) VALUES(12, 210);
+        INSERT INTO XP("Check", XPAmount) VALUES(14, 600);
+        INSERT INTO XP("Check", XPAmount) VALUES(17, 250);
+        INSERT INTO XP("Check", XPAmount) VALUES(18, 250);
+        INSERT INTO XP("Check", XPAmount) VALUES(19, 232);
+        INSERT INTO XP("Check", XPAmount) VALUES(20, 634);
+        INSERT INTO XP("Check", XPAmount) VALUES(22, 243);
+        INSERT INTO XP("Check", XPAmount) VALUES(23, 293);
+        INSERT INTO XP("Check", XPAmount) VALUES(24, 300);
+        INSERT INTO XP("Check", XPAmount) VALUES(25, 170);
+        INSERT INTO XP("Check", XPAmount) VALUES(26, 350);
+        INSERT INTO XP("Check", XPAmount) VALUES(30, 333);
+        INSERT INTO XP("Check", XPAmount) VALUES(31, 231);
+        INSERT INTO XP("Check", XPAmount) VALUES(32, 175);
+        INSERT INTO XP("Check", XPAmount) VALUES(33, 200);
+        INSERT INTO XP("Check", XPAmount) VALUES(34, 500);
+        INSERT INTO XP("Check", XPAmount) VALUES(35, 650);
+        INSERT INTO XP("Check", XPAmount) VALUES(36, 820);
+        INSERT INTO XP("Check", XPAmount) VALUES(37, 1043);
+        INSERT INTO XP("Check", XPAmount) VALUES(38, 267);
+        INSERT INTO XP("Check", XPAmount) VALUES(39, 1276);
+        INSERT INTO XP("Check", XPAmount) VALUES(40, 1443);
+        INSERT INTO XP("Check", XPAmount) VALUES(41, 300);
+        INSERT INTO XP("Check", XPAmount) VALUES(42, 425);
+        INSERT INTO XP("Check", XPAmount) VALUES(43, 500);
+        INSERT INTO XP("Check", XPAmount) VALUES(44, 1500);
+        INSERT INTO XP("Check", XPAmount) VALUES(45, 330);
+        INSERT INTO XP("Check", XPAmount) VALUES(46, 200);
+        INSERT INTO XP("Check", XPAmount) VALUES(47, 589);
+        INSERT INTO XP("Check", XPAmount) VALUES(48, 445);
+        INSERT INTO XP("Check", XPAmount) VALUES(49, 612);
+        INSERT INTO XP("Check", XPAmount) VALUES(50, 750);
     end if;
 end;
 $$ language plpgsql;
@@ -187,71 +239,71 @@ begin
 
     if (fill = true) then
         INSERT INTO Verter("Check", "State", Time) VALUES(1, 'Start', '14:35');
-        INSERT INTO Verter("Check", "State", Time) VALUES(1, 'Success', '14:40');
+        INSERT INTO Verter("Check", "State", Time) VALUES(1, 'Failure', '14:40');
 
-        INSERT INTO Verter("Check", "State", Time) VALUES(2, 'Start', '15:35');
-        INSERT INTO Verter("Check", "State", Time) VALUES(2, 'Success', '15:40');
+        INSERT INTO Verter("Check", "State", Time) VALUES(2, 'Start', '18:00');
+        INSERT INTO Verter("Check", "State", Time) VALUES(2, 'Success', '18:12');
 
-        INSERT INTO Verter("Check", "State", Time) VALUES(3, 'Start', '19:40');
-        INSERT INTO Verter("Check", "State", Time) VALUES(3, 'Success', '19:43');
+        INSERT INTO Verter("Check", "State", Time) VALUES(3, 'Start', '15:35');
+        INSERT INTO Verter("Check", "State", Time) VALUES(3, 'Success', '15:40');
 
-        INSERT INTO Verter("Check", "State", Time) VALUES(4, 'Start', '02:35');
-        INSERT INTO Verter("Check", "State", Time) VALUES(4, 'Success', '02:40');
+        INSERT INTO Verter("Check", "State", Time) VALUES(4, 'Start', '19:40');
+        INSERT INTO Verter("Check", "State", Time) VALUES(4, 'Success', '19:43');
 
-        INSERT INTO Verter("Check", "State", Time) VALUES(5, 'Start', '14:27');
-        INSERT INTO Verter("Check", "State", Time) VALUES(5, 'Success', '14:30');
+        INSERT INTO Verter("Check", "State", Time) VALUES(5, 'Start', '02:35');
+        INSERT INTO Verter("Check", "State", Time) VALUES(5, 'Success', '02:40');
 
-        INSERT INTO Verter("Check", "State", Time) VALUES(6, 'Start', '01:35');
-        INSERT INTO Verter("Check", "State", Time) VALUES(6, 'Success', '01:40');
+        INSERT INTO Verter("Check", "State", Time) VALUES(6, 'Start', '14:55');
+        INSERT INTO Verter("Check", "State", Time) VALUES(6, 'Success', '15:00');
 
-        INSERT INTO Verter("Check", "State", Time) VALUES(7, 'Start', '05:30');
-        INSERT INTO Verter("Check", "State", Time) VALUES(7, 'Success', '05:40');
+        INSERT INTO Verter("Check", "State", Time) VALUES(7, 'Start', '01:35');
+        INSERT INTO Verter("Check", "State", Time) VALUES(7, 'Success', '01:40');
 
-        INSERT INTO Verter("Check", "State", Time) VALUES(8, 'Start', '17:15');
-        INSERT INTO Verter("Check", "State", Time) VALUES(8, 'Success', '17:21');
+        INSERT INTO Verter("Check", "State", Time) VALUES(8, 'Start', '05:25');
+        INSERT INTO Verter("Check", "State", Time) VALUES(8, 'Failure', '05:34');
 
-        INSERT INTO Verter("Check", "State", Time) VALUES(9, 'Start', '23:43');
-        INSERT INTO Verter("Check", "State", Time) VALUES(9, 'Success', '23:45');
+        INSERT INTO Verter("Check", "State", Time) VALUES(9, 'Start', '05:30');
+        INSERT INTO Verter("Check", "State", Time) VALUES(9, 'Success', '05:40');
 
-        INSERT INTO Verter("Check", "State", Time) VALUES(10, 'Start', '18:28');
-        INSERT INTO Verter("Check", "State", Time) VALUES(10, 'Success', '18:35');
+        INSERT INTO Verter("Check", "State", Time) VALUES(10, 'Start', '17:26');
+        INSERT INTO Verter("Check", "State", Time) VALUES(10, 'Failure', '17:37'); -- 10
 
-        INSERT INTO Verter("Check", "State", Time) VALUES(14, 'Start', '04:31');
-        INSERT INTO Verter("Check", "State", Time) VALUES(14, 'Success', '04:34');
+        INSERT INTO Verter("Check", "State", Time) VALUES(11, 'Start', '23:34');
+        INSERT INTO Verter("Check", "State", Time) VALUES(11, 'Success', '23:37');
 
-        INSERT INTO Verter("Check", "State", Time) VALUES(17, 'Start', '22:36');
-        INSERT INTO Verter("Check", "State", Time) VALUES(17, 'Success', '22:40');
+        INSERT INTO Verter("Check", "State", Time) VALUES(12, 'Start', '18:28');
+        INSERT INTO Verter("Check", "State", Time) VALUES(12, 'Success', '18:35');
 
-        INSERT INTO Verter("Check", "State", Time) VALUES(18, 'Start', '13:35');
-        INSERT INTO Verter("Check", "State", Time) VALUES(18, 'Success', '13:45');
+        INSERT INTO Verter("Check", "State", Time) VALUES(13, 'Start', '18:28');
+        INSERT INTO Verter("Check", "State", Time) VALUES(13, 'Failure', '18:35');
 
-        INSERT INTO Verter("Check", "State", Time) VALUES(20, 'Start', '17:46');
-        INSERT INTO Verter("Check", "State", Time) VALUES(20, 'Success', '17:50');
+        INSERT INTO Verter("Check", "State", Time) VALUES(14, 'Start', '07:00');
+        INSERT INTO Verter("Check", "State", Time) VALUES(14, 'Success', '07:14');  -- 14
+
+        INSERT INTO Verter("Check", "State", Time) VALUES(20, 'Start', '17:03');
+        INSERT INTO Verter("Check", "State", Time) VALUES(20, 'Success', '17:08');
+
+        INSERT INTO Verter("Check", "State", Time) VALUES(24, 'Start', '02:04');
+        INSERT INTO Verter("Check", "State", Time) VALUES(24, 'Success', '02:08');
+
+        INSERT INTO Verter("Check", "State", Time) VALUES(25, 'Start', '17:44');
+        INSERT INTO Verter("Check", "State", Time) VALUES(25, 'Success', '17:48');
+
+        INSERT INTO Verter("Check", "State", Time) VALUES(29, 'Start', '23:53');
+        INSERT INTO Verter("Check", "State", Time) VALUES(29, 'Failure', '23:59');
         
-        INSERT INTO Verter("Check", "State", Time) VALUES(21, 'Start', '14:32');
-        INSERT INTO Verter("Check", "State", Time) VALUES(21, 'Success', '14:35');
+        INSERT INTO Verter("Check", "State", Time) VALUES(30, 'Start', '02:04');
+        INSERT INTO Verter("Check", "State", Time) VALUES(30, 'Success', '02:07');
 
-        INSERT INTO Verter("Check", "State", Time) VALUES(22, 'Start', '02:07');
-        INSERT INTO Verter("Check", "State", Time) VALUES(22, 'Success', '02:10');
+        INSERT INTO Verter("Check", "State", Time) VALUES(31, 'Start', '12:41');
+        INSERT INTO Verter("Check", "State", Time) VALUES(31, 'Success', '12:47');
 
-        INSERT INTO Verter("Check", "State", Time) VALUES(23, 'Start', '12:40');
-        INSERT INTO Verter("Check", "State", Time) VALUES(23, 'Success', '12:51');
+        INSERT INTO Verter("Check", "State", Time) VALUES(32, 'Start', '10:41');
+        INSERT INTO Verter("Check", "State", Time) VALUES(32, 'Success', '10:47');
 
-        INSERT INTO Verter("Check", "State", Time) VALUES(24, 'Start', '10:43');
-        INSERT INTO Verter("Check", "State", Time) VALUES(24, 'Success', '10:48');
-
-        INSERT INTO Verter("Check", "State", Time) VALUES(25, 'Start', '14:28');
-        INSERT INTO Verter("Check", "State", Time) VALUES(25, 'Success', '14:32');
-
-        INSERT INTO Verter("Check", "State", Time) VALUES(26, 'Start', '02:09');
-        INSERT INTO Verter("Check", "State", Time) VALUES(26, 'Success', '02:14');
-
-        INSERT INTO Verter("Check", "State", Time) VALUES(27, 'Start', '04:33');
-        INSERT INTO Verter("Check", "State", Time) VALUES(27, 'Success', '04:51');
-        
-
-
-        -- 14, 17, 18, 20-27
+        INSERT INTO Verter("Check", "State", Time) VALUES(33, 'Start', '14:25');
+        INSERT INTO Verter("Check", "State", Time) VALUES(33, 'Success', '14:28');
+        -- 1-14, 20, 24, 25, 29-33
     end if;
 end;
 $$ language plpgsql;
@@ -303,7 +355,8 @@ begin
         INSERT INTO Recommendations(Peer, RecommendedPeer) VALUES('Grandpat', 'Marcelit');
         INSERT INTO Recommendations(Peer, RecommendedPeer) VALUES('Jerlenem', 'Tonitaga');
         INSERT INTO Recommendations(Peer, RecommendedPeer) VALUES('Tonitaga', 'Zoomdeni');
-
+        INSERT INTO Recommendations(Peer, RecommendedPeer) VALUES('Tonitaga', 'Grandpat');
+        INSERT INTO Recommendations(Peer, RecommendedPeer) VALUES('Tonitaga', 'Jerlenem');
     end if;
 end;
 $$ language plpgsql;
@@ -346,46 +399,26 @@ begin
     );
 
     if (fill = true) then
-        -- INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Marcelit', 'Marcelit', 1);
-        -- INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Marcelit', 'Zoomdeni', 1);
-        -- INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Marcelit', 'Zoomdeni', 1);
-        -- INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Marcelit', 'Zoomdeni', 1);
-        -- INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Marcelit', 'Zoomdeni', 1);
-        -- INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Marcelit', 'Zoomdeni', 1);
-        -- INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Marcelit', 'Zoomdeni', 1);
-        -- INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Marcelit', 'Zoomdeni', 1);
-        -- INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Marcelit', 'Zoomdeni', 1);
-        -- INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Marcelit', 'Zoomdeni', 1);
-        -- INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Zoomdeni', 'Marcelit', 1);
-        -- INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Marcelit', 'Zoomdeni', 1);
-        -- INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Marcelit', 'Zoomdeni', 1);
-        -- INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Marcelit', 'Zoomdeni', 1);
-        -- INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Marcelit', 'Zoomdeni', 1);
-        -- INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Marcelit', 'Zoomdeni', 1);
-        -- INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Marcelit', 'Zoomdeni', 1);
-        -- INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Marcelit', 'Zoomdeni', 1);
-        -- INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Marcelit', 'Zoomdeni', 1);
-        -- INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Marcelit', 'Zoomdeni', 1);
-        -- INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Zoomdeni', 'Marcelit', 1);
-        -- INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Marcelit', 'Zoomdeni', 1);
-        -- INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Marcelit', 'Zoomdeni', 1);
-        -- INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Marcelit', 'Zoomdeni', 1);
-        -- INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Marcelit', 'Zoomdeni', 1);
-        -- INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Marcelit', 'Zoomdeni', 1);
-        -- INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Marcelit', 'Zoomdeni', 1);
-        -- INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Marcelit', 'Zoomdeni', 1);
-        -- INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Marcelit', 'Zoomdeni', 1);
-        -- INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Marcelit', 'Zoomdeni', 1);
-        -- INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Zoomdeni', 'Marcelit', 1);
-        -- INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Marcelit', 'Zoomdeni', 1);
-        -- INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Marcelit', 'Zoomdeni', 1);
-        -- INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Marcelit', 'Zoomdeni', 1);
-        -- INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Marcelit', 'Zoomdeni', 1);
-        -- INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Marcelit', 'Zoomdeni', 1);
-        -- INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Marcelit', 'Zoomdeni', 1);
-        -- INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Marcelit', 'Zoomdeni', 1);
-        -- INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Marcelit', 'Zoomdeni', 1);
-        -- INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Marcelit', 'Zoomdeni', 1);
+        INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Marcelit', 'Zoomdeni', 26);
+        INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Marcelit', 'Tonitaga', 0);
+        INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Marcelit', 'Jerlenem', 2);
+        INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Marcelit', 'Grandpat', 2);
+        INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Zoomdeni', 'Marcelit', 6);
+        INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Zoomdeni', 'Tonitaga', 48);
+        INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Zoomdeni', 'Grandpat', 0);
+        INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Zoomdeni', 'Jerlenem', 0);
+        INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Jerlenem', 'Marcelit', 0);
+        INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Jerlenem', 'Zoomdeni', 0);
+        INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Jerlenem', 'Tonitaga', 0);
+        INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Jerlenem', 'Grandpat', 4);
+        INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Tonitaga', 'Marcelit', 2);
+        INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Tonitaga', 'Zoomdeni', 2);
+        INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Tonitaga', 'Jerlenem', 0);
+        INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Tonitaga', 'Grandpat', 8);
+        INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Grandpat', 'Zoomdeni', 2);
+        INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Grandpat', 'Tonitaga', 8);
+        INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Grandpat', 'Jerlenem', 4);
+        INSERT INTO TransferredPoints(CheckingPeer, CheckedPeer, PointsAmount) VALUES ('Grandpat', 'Marcelit', 0);
     end if;
 end;
 $$ language plpgsql;
@@ -408,128 +441,167 @@ begin
         INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(1, 'Zoomdeni', 'Start', '14:02');
         INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(1, 'Zoomdeni', 'Success', '14:30');
 
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(2, 'Marcelit', 'Start', '15:03');
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(2, 'Marcelit', 'Success', '15:33');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(2, 'Jerlenem', 'Start', '17:27');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(2, 'Jerlenem', 'Success', '17:57');
 
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(3, 'Zoomdeni', 'Start', '19:09');
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(3, 'Zoomdeni', 'Success', '19:39');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(3, 'Marcelit', 'Start', '15:03');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(3, 'Marcelit', 'Success', '15:33');
 
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(4, 'Grandpat', 'Start', '02:03');
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(4, 'Grandpat', 'Success', '02:33');
-        
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(5, 'Tonitaga', 'Start', '14:23');
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(5, 'Tonitaga', 'Success', '14:53');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(4, 'Zoomdeni', 'Start', '19:09');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(4, 'Zoomdeni', 'Success', '19:39');
 
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(6, 'Zoomdeni', 'Start', '00:44');
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(6, 'Zoomdeni', 'Success', '01:23');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(5, 'Grandpat', 'Start', '02:03');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(5, 'Grandpat', 'Success', '02:33');
         
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(7, 'Marcelit', 'Start', '04:53');
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(7, 'Marcelit', 'Success', '05:23');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(6, 'Tonitaga', 'Start', '14:23');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(6, 'Tonitaga', 'Success', '14:53');
+
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(7, 'Zoomdeni', 'Start', '00:44');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(7, 'Zoomdeni', 'Success', '01:23');
         
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(8, 'Grandpat', 'Start', '16:43');
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(8, 'Grandpat', 'Success', '17:13');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(8, 'Marcelit', 'Start', '04:53');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(8, 'Marcelit', 'Success', '05:23');
+
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(9, 'Marcelit', 'Start', '16:34');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(9, 'Marcelit', 'Success', '17:02');        
+        
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(10, 'Grandpat', 'Start', '16:43');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(10, 'Grandpat', 'Success', '17:13');
     
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(9, 'Marcelit', 'Start', '23:03');
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(9, 'Marcelit', 'Success', '23:33');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(11, 'Marcelit', 'Start', '23:03');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(11, 'Marcelit', 'Success', '23:33');
         
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(10, 'Jerlenem', 'Start', '17:51');
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(10, 'Jerlenem', 'Success', '18:21');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(12, 'Jerlenem', 'Start', '17:51');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(12, 'Jerlenem', 'Success', '18:21');
 
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(11, 'Tonitaga', 'Start', '20:21'); 
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(11, 'Tonitaga', 'Success', '20:51');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(13, 'Tonitaga', 'Start', '00:21'); 
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(13, 'Tonitaga', 'Failure', '00:51');
 
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(12, 'Jerlenem', 'Start', '22:13');
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(12, 'Jerlenem', 'Success', '22:43');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(14, 'Marcelit', 'Start', '06:21'); 
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(14, 'Marcelit', 'Success', '06:51');
 
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(13, 'Zoomdeni', 'Start', '16:09');
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(13, 'Zoomdeni', 'Success', '16:39');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(15, 'Tonitaga', 'Start', '12:21'); 
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(15, 'Tonitaga', 'Failure', '12:51');
 
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(14, 'Tonitaga', 'Start', '03:55');
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(14, 'Tonitaga', 'Success', '04:25');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(16, 'Jerlenem', 'Start', '17:13');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(16, 'Jerlenem', 'Failure', '17:43');
+
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(17, 'Zoomdeni', 'Start', '23:09');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(17, 'Zoomdeni', 'Success', '23:39');
+
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(18, 'Grandpat', 'Start', '03:55');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(18, 'Grandpat', 'Success', '04:25');
         
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(15, 'Tonitaga', 'Start', '06:43');
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(15, 'Tonitaga', 'Success', '07:13');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(19, 'Tonitaga', 'Start', '06:43');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(19, 'Tonitaga', 'Success', '07:13');
 
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(16, 'Grandpat', 'Start', '16:32');
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(16, 'Grandpat', 'Success', '17:02');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(20, 'Grandpat', 'Start', '16:32');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(20, 'Grandpat', 'Success', '17:02');
 
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(17, 'Tonitaga', 'Start', '22:04');
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(17, 'Tonitaga', 'Success', '22:34');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(21, 'Grandpat', 'Start', '22:24');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(21, 'Grandpat', 'Failure', '22:44');
+
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(22, 'Grandpat', 'Start', '23:20');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(22, 'Grandpat', 'Success', '23:57');
         
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(18, 'Marcelit', 'Start', '13:03');
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(18, 'Marcelit', 'Success', '13:33');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(23, 'Tonitaga', 'Start', '13:03');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(23, 'Tonitaga', 'Success', '13:33');
         
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(19, 'Zoomdeni', 'Start', '02:03');
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(19, 'Zoomdeni', 'Success', '02:33');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(24, 'Marcelit', 'Start', '02:03');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(24, 'Marcelit', 'Success', '02:33');
     
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(20, 'Grandpat', 'Start', '17:13');
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(20, 'Grandpat', 'Success', '17:43');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(25, 'Zoomdeni', 'Start', '17:13');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(25, 'Zoomdeni', 'Success', '17:43');
 
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(21, 'Marcelit', 'Start', '14:02');
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(21, 'Marcelit', 'Success', '14:30');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(26, 'Grandpat', 'Start', '12:02');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(26, 'Grandpat', 'Success', '12:30');
 
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(22, 'Zoomdeni', 'Start', '01:33');
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(22, 'Zoomdeni', 'Success', '02:03');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(27, 'Marcelit', 'Start', '19:22');  -- 27
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(27, 'Marcelit', 'Failure', '19:45');
 
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(23, 'Marcelit', 'Start', '12:09');
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(23, 'Marcelit', 'Success', '12:39');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(28, 'Marcelit', 'Start', '22:10');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(28, 'Marcelit', 'Failure', '22:30');
 
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(24, 'Zoomdeni', 'Start', '10:05');
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(24, 'Zoomdeni', 'Success', '10:35');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(29, 'Marcelit', 'Start', '23:00');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(29, 'Marcelit', 'Success', '23:45');
+
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(30, 'Marcelit', 'Start', '01:33');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(30, 'Marcelit', 'Success', '02:03');
+-- 
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(31, 'Zoomdeni', 'Start', '12:09');  -- 31
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(31, 'Zoomdeni', 'Success', '12:39');
+-- 
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(32, 'Marcelit', 'Start', '10:05');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(32, 'Marcelit', 'Success', '10:35');
         
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(25, 'Marcelit', 'Start', '13:44');
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(25, 'Marcelit', 'Success', '14:24');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(33, 'Zoomdeni', 'Start', '13:44');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(33, 'Zoomdeni', 'Success', '14:24'); -- 33
 
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(26, 'Zoomdeni', 'Start', '01:34');
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(26, 'Zoomdeni', 'Success', '02:04');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(34, 'Marcelit', 'Start', '01:34');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(34, 'Marcelit', 'Success', '02:04');
 
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(27, 'Marcelit', 'Start', '04:02');
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(27, 'Marcelit', 'Success', '04:32');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(35, 'Zoomdeni', 'Start', '04:02');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(35, 'Zoomdeni', 'Success', '04:32');
         
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(28, 'Zoomdeni', 'Start', '05:10');
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(28, 'Zoomdeni', 'Success', '05:40');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(36, 'Marcelit', 'Start', '05:10');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(36, 'Marcelit', 'Success', '05:40');
         
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(29, 'Marcelit', 'Start', '09:12');
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(29, 'Marcelit', 'Success', '09:42');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(37, 'Zoomdeni', 'Start', '09:12');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(37, 'Zoomdeni', 'Success', '09:42');
     
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(30, 'Zoomdeni', 'Start', '02:03');
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(30, 'Zoomdeni', 'Success', '02:33');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(38, 'Marcelit', 'Start', '02:03');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(38, 'Marcelit', 'Success', '02:33');
 
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(31, 'Marcelit', 'Start', '14:02');
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(31, 'Marcelit', 'Success', '14:30');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(39, 'Zoomdeni', 'Start', '14:02');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(39, 'Zoomdeni', 'Success', '14:30');
 
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(32, 'Zoomdeni', 'Start', '01:33');
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(32, 'Zoomdeni', 'Success', '02:03');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(40, 'Marcelit', 'Start', '01:33');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(40, 'Marcelit', 'Success', '02:03');
 
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(33, 'Marcelit', 'Start', '12:09');
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(33, 'Marcelit', 'Success', '12:39');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(41, 'Zoomdeni', 'Start', '12:09');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(41, 'Zoomdeni', 'Success', '12:39');
 
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(34, 'Zoomdeni', 'Start', '02:06');
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(34, 'Zoomdeni', 'Success', '02:36');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(42, 'Marcelit', 'Start', '02:06');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(42, 'Marcelit', 'Success', '02:36');
         
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(35, 'Marcelit', 'Start', '13:25');
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(35, 'Marcelit', 'Success', '13:55');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(43, 'Zoomdeni', 'Start', '13:25');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(43, 'Zoomdeni', 'Success', '13:55');
 
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(36, 'Marcelit', 'Start', '14:52');
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(36, 'Marcelit', 'Success', '15:12');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(44, 'Marcelit', 'Start', '14:52');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(44, 'Marcelit', 'Success', '15:12');
         
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(37, 'Zoomdeni', 'Start', '02:03');
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(37, 'Zoomdeni', 'Success', '02:33');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(45, 'Marcelit', 'Start', '02:03');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(45, 'Marcelit', 'Success', '02:33');
         
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(38, 'Marcelit', 'Start', '06:02');
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(38, 'Marcelit', 'Success', '06:32');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(46, 'Zoomdeni', 'Start', '06:02');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(46, 'Zoomdeni', 'Success', '06:32');
     
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(39, 'Zoomdeni', 'Start', '02:41');
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(39, 'Zoomdeni', 'Success', '03:11');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(47, 'Marcelit', 'Start', '02:41');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(47, 'Marcelit', 'Success', '03:11');
 
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(40, 'Marcelit', 'Start', '12:09');
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(40, 'Marcelit', 'Success', '12:39');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(48, 'Zoomdeni', 'Start', '12:09');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(48, 'Zoomdeni', 'Success', '12:39');
         
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(41, 'Zoomdeni', 'Start', '14:07');
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(41, 'Zoomdeni', 'Success', '14:37');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(49, 'Marcelit', 'Start', '14:07');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(49, 'Marcelit', 'Success', '14:37');
 
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(42, 'Marcelit', 'Start', '07:41');
-        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(42, 'Marcelit', 'Success', '08:11');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(50, 'Zoomdeni', 'Start', '07:41');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(50, 'Zoomdeni', 'Success', '08:11');
+
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(51, 'Marcelit', 'Start', '12:14');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(51, 'Marcelit', 'Failure', '12:54');
+
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(52, 'Marcelit', 'Start', '14:32');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(52, 'Marcelit', 'Failure', '14:40');
+
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(53, 'Marcelit', 'Start', '04:41');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(53, 'Marcelit', 'Failure', '04:45');
+
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(54, 'Marcelit', 'Start', '09:15');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(54, 'Marcelit', 'Failure', '09:24');
+
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(55, 'Marcelit', 'Start', '22:30');
+        INSERT INTO P2P("Check", CheckingPeer, "State", Time) VALUES(55, 'Marcelit', 'Failure', '23:58');
     end if;
 end;
 $$ language plpgsql;
