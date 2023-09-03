@@ -1,5 +1,8 @@
 # Вспомогательная информация для проекта:
 
+## README
+1) [readme.md](https://github.com/Sergeo-pedago/21Tasks/blob/main/SQL/SQL2_Info21_v1.0/README_RUS.md)
+
 ## Создание базы данных
 1) [Ограничение (CHECK) ](https://postgrespro.ru/docs/postgresql/9.6/ddl-constraints)
 
