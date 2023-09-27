@@ -436,7 +436,7 @@ begin
         CheckingPeer varchar REFERENCES Peers(Nickname) NOT NULL,
         Status TaskStatus NOT NULL,
         Time time DEFAULT CURRENT_TIME NOT NULL,
-        CONSTRAINT uk_task_p2p UNIQUE (CheckID, CheckingPeer, TaskStatus)
+        CONSTRAINT uk_task_p2p UNIQUE (CheckID, CheckingPeer, Status)
     );
 
     if (fill = true) then
