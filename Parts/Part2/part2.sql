@@ -3,14 +3,14 @@ create or replace procedure AddP2P(
     Checker varchar,
     TaskName varchar,
     State TaskStatus,
-    TimeCurrent date
+    TimeCurrent time
 )
 as $$
     declare
         lastCheckID int;
         currentTime time;
     begin
-        if (Status == 'Start') then
+        if (Status = 'Start') then
             INSERT INTO Checks(Peer, Task, Date)
             VALUES (Checked, TaskName, current_date);
             SELECT LASTVAL() INTO lastCheckID;
@@ -25,9 +25,9 @@ as $$
             LIMIT 1;
         end if;
     
-    currentTime := time '00:00:00' + TimeCurrent;
+    -- currentTime := '00:00:00'::time + TimeCurrent;
     INSERT INTO P2P (CheckID, CheckingPeer, Status, Time)
-    VALUES (lastCheckID, Checker, State, currentTime);
+    VALUES (lastCheckID, Checker, State, TimeCurrent);
 end;
 $$ language plpgsql;
 
@@ -43,8 +43,8 @@ as $$
             UPDATE TransferredPoints trp
             SET PointsAmount = PointsAmount + 1
             WHERE new.CheckingPeer = trp.checkingpeer
-                AND Checks.Peer = trp.CheckedPeer;
                 AND Checks.id = lastCheckID
+                AND Checks.Peer = trp.CheckedPeer;
         end if;
         return new;
     end;
@@ -62,6 +62,7 @@ create or replace procedure AddVerter(
 as $$
     declare
         lastCheckID int;
+        currentTime time;
     begin
         lastCheckID := (SELECT c.id FROM P2P
             JOIN Checks c ON c.id = P2P.CheckID
@@ -70,8 +71,9 @@ as $$
                 AND P2P.Status = 'Success'
                 ORDER BY P2P.Time desc
                 limit 1);
+        -- currentTime := '00:00:00'::time + TimeCurrent;
         INSERT INTO Verter(CheckID, Status, Time)
-        VALUES (lastCheckID, State, TimeCurrent)
+        VALUES (lastCheckID, State, TimeCurrent);
     end;
 $$ language plpgsql;
 
@@ -90,8 +92,8 @@ as $$
             limit 1);
         Status := (SELECT Status
             FROM P2P
-            JOIN Checks ON Check.id = P2P.checkid
-            JOIN P2P ON P2P.checkid = check.id
+            JOIN Checks ON Checks.id = P2P.checkid
+            JOIN P2P ON P2P.checkid = Checks.id
             limit 1);
         verterStatus := (SELECT Verter.status
             FROM Verter
@@ -99,7 +101,7 @@ as $$
             limit 1);
         if (new.xpamount <= maxXP and (Status == 'Success' and
                                     (verterStatus = 'Success' or
-                                    (verterStatus != 'Failure' and verterStatus != 'Start') )) then
+                                    (verterStatus != 'Failure' and verterStatus != 'Start')))) then
             return new;
         else
             return null;
@@ -111,3 +113,28 @@ $$ language plpgsql;
 create trigger BeforeInsertXP before insert on XP
 for each row execute procedure CheckXP();
 
+
+create or replace procedure TestPart2()
+as $$
+    begin
+    	call AddP2P('Marcelit', 'Zoomdeni', 'A1', 'Start', '06:00:00');
+    	call AddP2P('Marcelit', 'Zoomdeni', 'A1', 'Success', '07:00:00');
+    	call AddVerter('Marcelit', 'A1', 'Success', '11:00:00');
+    	insert into P2P(CheckID, CheckingPeer, Status, Time)
+    	values (56, 'Zoomdeni', 'Start', '15:00:00');
+    	insert into XP (CheckID, XPAmount)
+    	values (56, 400);
+
+    	SELECT * FROM XP ORDER BY checkid DESC limit 5;
+
+    	insert into XP (CheckID, XPAmount)
+    	values (56, 250);
+
+    	SELECT * FROM XP ORDER BY checkid DESC limit 5;
+
+    	DELETE FROM P2P WHERE P2P.checkid = 56;
+    	DELETE FROM XP WHERE XP.checkid = 56;
+		DELETE FROM Checks WHERE Checks.id = 56;
+    end;
+$$
+language plpgsql;
